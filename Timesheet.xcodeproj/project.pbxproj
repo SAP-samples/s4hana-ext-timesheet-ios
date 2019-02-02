@@ -1,0 +1,994 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1277F7611F8E66AF0060AF58 /* SAPLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1277F7601F8E66AC0060AF58 /* SAPLogo@2x.png */; };
+		128604DA1E55B41600C698B5 /* SAPCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 128604D91E55B41600C698B5 /* SAPCommon.framework */; };
+		128604DB1E55B43B00C698B5 /* SAPCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 128604D91E55B41600C698B5 /* SAPCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		128B53061F8E667000E64DF6 /* SnapshotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128B53051F8E667000E64DF6 /* SnapshotViewController.swift */; };
+		12D066CF1F4DDB0E0075EBA4 /* ConfigurationProvider.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12D066CE1F4DDB0A0075EBA4 /* ConfigurationProvider.plist */; };
+		12E84FE31F4ECC4A0061C99E /* SAPFioriFlows.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E84FE21F4ECC3E0061C99E /* SAPFioriFlows.framework */; };
+		12E84FE41F4ECC4A0061C99E /* SAPFioriFlows.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 12E84FE21F4ECC3E0061C99E /* SAPFioriFlows.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		12E84FE51F4ECF220061C99E /* OnboardingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E84FDE1F4EBD460061C99E /* OnboardingManager.swift */; };
+		169D9D47DAEC49C74EBD63C7 /* APIMANAGEWORKFORCETIMESHEETEntitiesMetadataChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC83B845CFA748BE1CA42E4 /* APIMANAGEWORKFORCETIMESHEETEntitiesMetadataChanges.swift */; };
+		2917B07092AB7BC8786B5211 /* APIMANAGEWORKFORCETIMESHEETEntitiesMetadataText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948DDDB966BA8162736F04C5 /* APIMANAGEWORKFORCETIMESHEETEntitiesMetadataText.swift */; };
+		3EBD37D430258CB6F7604B1B /* APIMANAGEWORKFORCETIMESHEETEntitiesStaticResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D0D392004E6245994AC0CE /* APIMANAGEWORKFORCETIMESHEETEntitiesStaticResolver.swift */; };
+		755533981F25FD330017A1BC /* SAPOfflineOData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755533971F25FD2A0017A1BC /* SAPOfflineOData.framework */; };
+		755533991F25FD330017A1BC /* SAPOfflineOData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 755533971F25FD2A0017A1BC /* SAPOfflineOData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		756192211DBE1A99007F562C /* SAPOData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7561921A1DBE1A90007F562C /* SAPOData.framework */; };
+		756192221DBE1A99007F562C /* SAPOData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7561921A1DBE1A90007F562C /* SAPOData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7569DA531E5C717C00C5D751 /* SAPFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7569DA511E5C716A00C5D751 /* SAPFoundation.framework */; };
+		7569DA541E5C717C00C5D751 /* SAPFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7569DA511E5C716A00C5D751 /* SAPFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		759BA2701E6821A7001C32BA /* SAPFiori.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 759BA26F1E6821A7001C32BA /* SAPFiori.framework */; };
+		759BA2721E6821AF001C32BA /* SAPFiori.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 759BA26F1E6821A7001C32BA /* SAPFiori.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7A1315B91D4B982000A5DA56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1315B81D4B982000A5DA56 /* AppDelegate.swift */; };
+		7A1315C21D4B982000A5DA56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A1315C11D4B982000A5DA56 /* Assets.xcassets */; };
+		7A1315C51D4B982000A5DA56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A1315C31D4B982000A5DA56 /* LaunchScreen.storyboard */; };
+		7A16F06D1FD1B3C700D2FABD /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 7A16F06C1FD1B3C700D2FABD /* README.md */; };
+		874254E09C75E44F4DAA628F /* APIMANAGEWORKFORCETIMESHEETEntitiesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3DF71B6473AB255700F223 /* APIMANAGEWORKFORCETIMESHEETEntitiesFactory.swift */; };
+		9423A88C48338E9425635401 /* APIMANAGEWORKFORCETIMESHEETEntitiesMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E7F7AF2B0397B0891D0C6E /* APIMANAGEWORKFORCETIMESHEETEntitiesMetadata.swift */; };
+		B101262620C7D33900625B15 /* BarBannerNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B101262520C7D33900625B15 /* BarBannerNotification.swift */; };
+		B149F71020A08DCA00C21395 /* TimeSheetEntryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B149F70F20A08DCA00C21395 /* TimeSheetEntryService.swift */; };
+		B149F71220A08FE400C21395 /* TimeSheetEntryServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B149F71120A08FE400C21395 /* TimeSheetEntryServiceImpl.swift */; };
+		B149F71420A0914A00C21395 /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B149F71320A0914A00C21395 /* ServiceFactory.swift */; };
+		B149F71720A091DD00C21395 /* TimeSheetEntryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B149F71620A091DD00C21395 /* TimeSheetEntryRepository.swift */; };
+		B149F71920A0921100C21395 /* TimeSheetEntryRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B149F71820A0921100C21395 /* TimeSheetEntryRepositoryImpl.swift */; };
+		B149F71D20A0950A00C21395 /* DataLayerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B149F71C20A0950A00C21395 /* DataLayerFactory.swift */; };
+		B149F71F20A0956D00C21395 /* DataLayerFactoryProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B149F71E20A0956D00C21395 /* DataLayerFactoryProvider.swift */; };
+		B149F72320A0975200C21395 /* DataLayerBackendFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B149F72220A0975200C21395 /* DataLayerBackendFactory.swift */; };
+		B18AC44420A3179100AEB3C9 /* ServiceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18AC44320A3179100AEB3C9 /* ServiceConfiguration.swift */; };
+		B191C27620FF3B3600634B65 /* Dev&Ops_Error2.png in Resources */ = {isa = PBXBuildFile; fileRef = B191C27420FF3B3600634B65 /* Dev&Ops_Error2.png */; };
+		B191C27720FF3B3600634B65 /* Dev&Ops_Error1.png in Resources */ = {isa = PBXBuildFile; fileRef = B191C27520FF3B3600634B65 /* Dev&Ops_Error1.png */; };
+		B1A7A7FD20A5BDD600AC1A1C /* TimeSheetAppServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A7A7FC20A5BDD600AC1A1C /* TimeSheetAppServiceFactory.swift */; };
+		B1A7A7FF20A5C34F00AC1A1C /* TimeSheetAppServiceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A7A7FE20A5C34F00AC1A1C /* TimeSheetAppServiceAPI.swift */; };
+		B1A7A80120A5C46B00AC1A1C /* TimeSheetAppServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A7A80020A5C46B00AC1A1C /* TimeSheetAppServiceImpl.swift */; };
+		B1F128A620FE269300DD6148 /* Troubleshooting.md in Resources */ = {isa = PBXBuildFile; fileRef = B1F128A520FE269300DD6148 /* Troubleshooting.md */; };
+		B804325120AEF36E00018857 /* OfflineODataDelegateImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B804325020AEF36E00018857 /* OfflineODataDelegateImpl.swift */; };
+		B804325A20B57D5800018857 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B804325920B57D5800018857 /* UserRepository.swift */; };
+		B804325C20B57D6300018857 /* UserRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B804325B20B57D6300018857 /* UserRepositoryImpl.swift */; };
+		B83E054020A971D3009F7FCB /* ErrorAlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83E053F20A971D3009F7FCB /* ErrorAlertHelper.swift */; };
+		B83E054220A972FF009F7FCB /* SimpleAlertBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83E054120A972FF009F7FCB /* SimpleAlertBuilder.swift */; };
+		B858A9C920A30F6400820ED4 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B858A9C820A30F6400820ED4 /* ViewControllerFactory.swift */; };
+		B858A9CB20A313FF00820ED4 /* SAPFioriProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B858A9CA20A313FF00820ED4 /* SAPFioriProgressIndicator.swift */; };
+		B858A9CE20A319AC00820ED4 /* TimesheetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B858A9CC20A319AC00820ED4 /* TimesheetTableViewController.swift */; };
+		B858A9CF20A319AC00820ED4 /* TimesheetTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B858A9CD20A319AC00820ED4 /* TimesheetTableViewController.xib */; };
+		B858A9D520A5AF3B00820ED4 /* TaskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B858A9D320A5AF3B00820ED4 /* TaskTableViewController.swift */; };
+		B858A9D620A5AF3B00820ED4 /* TaskTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B858A9D420A5AF3B00820ED4 /* TaskTableViewController.xib */; };
+		B858A9DA20A5BE7A00820ED4 /* TaskTypeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B858A9D820A5BE7A00820ED4 /* TaskTypeTableViewController.swift */; };
+		B858A9DB20A5BE7A00820ED4 /* TaskTypeTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B858A9D920A5BE7A00820ED4 /* TaskTypeTableViewController.xib */; };
+		B858A9DD20A5BEC600820ED4 /* TaskType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B858A9DC20A5BEC600820ED4 /* TaskType.swift */; };
+		B8620DB920C96EFB000E07C9 /* TimeSheetEntryRepositoryImplTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8620DB820C96EFB000E07C9 /* TimeSheetEntryRepositoryImplTest.swift */; };
+		B8620DBB20C96F3B000E07C9 /* TimeSheetODataServiceOnlineMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8620DBA20C96F3B000E07C9 /* TimeSheetODataServiceOnlineMock.swift */; };
+		B8620DBF20C971A7000E07C9 /* TimeSheetODataServiceOfflineMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8620DBE20C971A7000E07C9 /* TimeSheetODataServiceOfflineMock.swift */; };
+		B8620DC720CA7451000E07C9 /* TaskTypeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8620DC620CA7450000E07C9 /* TaskTypeTest.swift */; };
+		B8D94CE020C7BF9300871524 /* TimeSheetEntryServiceImplTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D94CDF20C7BF9300871524 /* TimeSheetEntryServiceImplTest.swift */; };
+		B8D94CE420C7C03D00871524 /* TimeSheetEntryRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D94CE320C7C03D00871524 /* TimeSheetEntryRepositoryMock.swift */; };
+		B8D94CE620C7C19600871524 /* UserRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D94CE520C7C19600871524 /* UserRepositoryMock.swift */; };
+		B8D94CE820C7C2CB00871524 /* TestDataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D94CE720C7C2CB00871524 /* TestDataGenerator.swift */; };
+		B8D94CE920C7C44000871524 /* SAPCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 128604D91E55B41600C698B5 /* SAPCommon.framework */; };
+		B8D94CEA20C7C44000871524 /* SAPFiori.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 759BA26F1E6821A7001C32BA /* SAPFiori.framework */; };
+		B8D94CEB20C7C44000871524 /* SAPFioriFlows.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12E84FE21F4ECC3E0061C99E /* SAPFioriFlows.framework */; };
+		B8D94CEC20C7C44000871524 /* SAPOData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7561921A1DBE1A90007F562C /* SAPOData.framework */; };
+		B8D94CED20C7C44000871524 /* SAPOfflineOData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 755533971F25FD2A0017A1BC /* SAPOfflineOData.framework */; };
+		B8D94CEE20C7C44000871524 /* SAPFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7569DA511E5C716A00C5D751 /* SAPFoundation.framework */; };
+		B8DC058220AB1F4100A42CCA /* OfflineService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DC058120AB1F4100A42CCA /* OfflineService.swift */; };
+		B8DC058420AB1F6700A42CCA /* OfflineServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DC058320AB1F6700A42CCA /* OfflineServiceImpl.swift */; };
+		B8DC058C20AD6D1500A42CCA /* UpdateTaskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DC058A20AD6D1500A42CCA /* UpdateTaskTableViewController.swift */; };
+		B8DC058D20AD6D1500A42CCA /* UpdateTaskTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B8DC058B20AD6D1500A42CCA /* UpdateTaskTableViewController.xib */; };
+		B8FA02AC20DCCB9E0075A3F8 /* DateTimeConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FA02AB20DCCB9E0075A3F8 /* DateTimeConverter.swift */; };
+		BAA2660D2F708BF11F3CEBF7 /* APIMANAGEWORKFORCETIMESHEETEntitiesMetadataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A909A4D95E1A9A6345C998A /* APIMANAGEWORKFORCETIMESHEETEntitiesMetadataParser.swift */; };
+		C362125F70B197C5E214FA7A /* TimeSheetDataFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9217E1CBA02BB54EC434AD42 /* TimeSheetDataFields.swift */; };
+		CBCA7A991E3778A9001AF49E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBCA7A9B1E3778A9001AF49E /* Main.storyboard */; };
+		DD8F97EC2319B707B50440F0 /* TimeSheetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80437AD6D3D6B44459BB0D11 /* TimeSheetEntry.swift */; };
+		F2D851C7800058F19162541D /* APIMANAGEWORKFORCETIMESHEETEntities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E7DE0C178BD2E02BDBAFC4 /* APIMANAGEWORKFORCETIMESHEETEntities.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B8D94CD220C7BEE200871524 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A1315AD1D4B982000A5DA56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A1315B41D4B982000A5DA56;
+			remoteInfo = Timesheet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		758AC1C31D5A265200311F39 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7569DA541E5C717C00C5D751 /* SAPFoundation.framework in Embed Frameworks */,
+				12E84FE41F4ECC4A0061C99E /* SAPFioriFlows.framework in Embed Frameworks */,
+				128604DB1E55B43B00C698B5 /* SAPCommon.framework in Embed Frameworks */,
+				755533991F25FD330017A1BC /* SAPOfflineOData.framework in Embed Frameworks */,
+				756192221DBE1A99007F562C /* SAPOData.framework in Embed Frameworks */,
+				759BA2721E6821AF001C32BA /* SAPFiori.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1277F7601F8E66AC0060AF58 /* SAPLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SAPLogo@2x.png"; sourceTree = "<group>"; };
+		128604D91E55B41600C698B5 /* SAPCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SAPCommon.framework; sourceTree = "<group>"; };
+		128B53051F8E667000E64DF6 /* SnapshotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotViewController.swift; sourceTree = "<group>"; };
+		12D066CE1F4DDB0A0075EBA4 /* ConfigurationProvider.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ConfigurationProvider.plist; sourceTree = "<group>"; };
+		12E84FDE1F4EBD460061C99E /* OnboardingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingManager.swift; sourceTree = "<group>"; };
+		12E84FE21F4ECC3E0061C99E /* SAPFioriFlows.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SAPFioriFlows.framework; sourceTree = "<group>"; };
+		1BC83B845CFA748BE1CA42E4 /* APIMANAGEWORKFORCETIMESHEETEntitiesMetadataChanges.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIMANAGEWORKFORCETIMESHEETEntitiesMetadataChanges.swift; path = "Proxy Classes/com.sap.bp.timesheet/internal/APIMANAGEWORKFORCETIMESHEETEntitiesMetadataChanges.swift"; sourceTree = "<group>"; };
+		5A909A4D95E1A9A6345C998A /* APIMANAGEWORKFORCETIMESHEETEntitiesMetadataParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIMANAGEWORKFORCETIMESHEETEntitiesMetadataParser.swift; path = "Proxy Classes/com.sap.bp.timesheet/internal/APIMANAGEWORKFORCETIMESHEETEntitiesMetadataParser.swift"; sourceTree = "<group>"; };
+		755533971F25FD2A0017A1BC /* SAPOfflineOData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SAPOfflineOData.framework; sourceTree = "<group>"; };
+		7561921A1DBE1A90007F562C /* SAPOData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SAPOData.framework; sourceTree = "<group>"; };
+		7569DA511E5C716A00C5D751 /* SAPFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SAPFoundation.framework; sourceTree = "<group>"; };
+		759BA26F1E6821A7001C32BA /* SAPFiori.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SAPFiori.framework; sourceTree = "<group>"; };
+		7A1315B51D4B982000A5DA56 /* Timesheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timesheet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A1315B81D4B982000A5DA56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7A1315C11D4B982000A5DA56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A1315C41D4B982000A5DA56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7A1315C61D4B982000A5DA56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A16F06C1FD1B3C700D2FABD /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		80437AD6D3D6B44459BB0D11 /* TimeSheetEntry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimeSheetEntry.swift; path = "Proxy Classes/com.sap.bp.timesheet/public/TimeSheetEntry.swift"; sourceTree = "<group>"; };
+		86E7DE0C178BD2E02BDBAFC4 /* APIMANAGEWORKFORCETIMESHEETEntities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIMANAGEWORKFORCETIMESHEETEntities.swift; path = "Proxy Classes/com.sap.bp.timesheet/public/APIMANAGEWORKFORCETIMESHEETEntities.swift"; sourceTree = "<group>"; };
+		8B3DF71B6473AB255700F223 /* APIMANAGEWORKFORCETIMESHEETEntitiesFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIMANAGEWORKFORCETIMESHEETEntitiesFactory.swift; path = "Proxy Classes/com.sap.bp.timesheet/internal/APIMANAGEWORKFORCETIMESHEETEntitiesFactory.swift"; sourceTree = "<group>"; };
+		90E7F7AF2B0397B0891D0C6E /* APIMANAGEWORKFORCETIMESHEETEntitiesMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIMANAGEWORKFORCETIMESHEETEntitiesMetadata.swift; path = "Proxy Classes/com.sap.bp.timesheet/public/APIMANAGEWORKFORCETIMESHEETEntitiesMetadata.swift"; sourceTree = "<group>"; };
+		9217E1CBA02BB54EC434AD42 /* TimeSheetDataFields.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimeSheetDataFields.swift; path = "Proxy Classes/com.sap.bp.timesheet/public/TimeSheetDataFields.swift"; sourceTree = "<group>"; };
+		948DDDB966BA8162736F04C5 /* APIMANAGEWORKFORCETIMESHEETEntitiesMetadataText.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIMANAGEWORKFORCETIMESHEETEntitiesMetadataText.swift; path = "Proxy Classes/com.sap.bp.timesheet/internal/APIMANAGEWORKFORCETIMESHEETEntitiesMetadataText.swift"; sourceTree = "<group>"; };
+		B101262520C7D33900625B15 /* BarBannerNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarBannerNotification.swift; sourceTree = "<group>"; };
+		B149F70F20A08DCA00C21395 /* TimeSheetEntryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSheetEntryService.swift; sourceTree = "<group>"; };
+		B149F71120A08FE400C21395 /* TimeSheetEntryServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSheetEntryServiceImpl.swift; sourceTree = "<group>"; };
+		B149F71320A0914A00C21395 /* ServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFactory.swift; sourceTree = "<group>"; };
+		B149F71620A091DD00C21395 /* TimeSheetEntryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSheetEntryRepository.swift; sourceTree = "<group>"; };
+		B149F71820A0921100C21395 /* TimeSheetEntryRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSheetEntryRepositoryImpl.swift; sourceTree = "<group>"; };
+		B149F71C20A0950A00C21395 /* DataLayerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLayerFactory.swift; sourceTree = "<group>"; };
+		B149F71E20A0956D00C21395 /* DataLayerFactoryProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLayerFactoryProvider.swift; sourceTree = "<group>"; };
+		B149F72220A0975200C21395 /* DataLayerBackendFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataLayerBackendFactory.swift; sourceTree = "<group>"; };
+		B18AC44320A3179100AEB3C9 /* ServiceConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceConfiguration.swift; sourceTree = "<group>"; };
+		B191C27420FF3B3600634B65 /* Dev&Ops_Error2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dev&Ops_Error2.png"; sourceTree = "<group>"; };
+		B191C27520FF3B3600634B65 /* Dev&Ops_Error1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dev&Ops_Error1.png"; sourceTree = "<group>"; };
+		B1A7A7FC20A5BDD600AC1A1C /* TimeSheetAppServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSheetAppServiceFactory.swift; sourceTree = "<group>"; };
+		B1A7A7FE20A5C34F00AC1A1C /* TimeSheetAppServiceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSheetAppServiceAPI.swift; sourceTree = "<group>"; };
+		B1A7A80020A5C46B00AC1A1C /* TimeSheetAppServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSheetAppServiceImpl.swift; sourceTree = "<group>"; };
+		B1F128A520FE269300DD6148 /* Troubleshooting.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Troubleshooting.md; sourceTree = "<group>"; };
+		B804325020AEF36E00018857 /* OfflineODataDelegateImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineODataDelegateImpl.swift; sourceTree = "<group>"; };
+		B804325920B57D5800018857 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		B804325B20B57D6300018857 /* UserRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryImpl.swift; sourceTree = "<group>"; };
+		B83E053F20A971D3009F7FCB /* ErrorAlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorAlertHelper.swift; sourceTree = "<group>"; };
+		B83E054120A972FF009F7FCB /* SimpleAlertBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAlertBuilder.swift; sourceTree = "<group>"; };
+		B858A9C820A30F6400820ED4 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		B858A9CA20A313FF00820ED4 /* SAPFioriProgressIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAPFioriProgressIndicator.swift; sourceTree = "<group>"; };
+		B858A9CC20A319AC00820ED4 /* TimesheetTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesheetTableViewController.swift; sourceTree = "<group>"; };
+		B858A9CD20A319AC00820ED4 /* TimesheetTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimesheetTableViewController.xib; sourceTree = "<group>"; };
+		B858A9D320A5AF3B00820ED4 /* TaskTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewController.swift; sourceTree = "<group>"; };
+		B858A9D420A5AF3B00820ED4 /* TaskTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewController.xib; sourceTree = "<group>"; };
+		B858A9D820A5BE7A00820ED4 /* TaskTypeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTypeTableViewController.swift; sourceTree = "<group>"; };
+		B858A9D920A5BE7A00820ED4 /* TaskTypeTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTypeTableViewController.xib; sourceTree = "<group>"; };
+		B858A9DC20A5BEC600820ED4 /* TaskType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskType.swift; sourceTree = "<group>"; };
+		B8620DB820C96EFB000E07C9 /* TimeSheetEntryRepositoryImplTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSheetEntryRepositoryImplTest.swift; sourceTree = "<group>"; };
+		B8620DBA20C96F3B000E07C9 /* TimeSheetODataServiceOnlineMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSheetODataServiceOnlineMock.swift; sourceTree = "<group>"; };
+		B8620DBE20C971A7000E07C9 /* TimeSheetODataServiceOfflineMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSheetODataServiceOfflineMock.swift; sourceTree = "<group>"; };
+		B8620DC620CA7450000E07C9 /* TaskTypeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTypeTest.swift; sourceTree = "<group>"; };
+		B8D94CCD20C7BEE200871524 /* TimesheetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimesheetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8D94CD120C7BEE200871524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8D94CDF20C7BF9300871524 /* TimeSheetEntryServiceImplTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSheetEntryServiceImplTest.swift; sourceTree = "<group>"; };
+		B8D94CE320C7C03D00871524 /* TimeSheetEntryRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSheetEntryRepositoryMock.swift; sourceTree = "<group>"; };
+		B8D94CE520C7C19600871524 /* UserRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryMock.swift; sourceTree = "<group>"; };
+		B8D94CE720C7C2CB00871524 /* TestDataGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDataGenerator.swift; sourceTree = "<group>"; };
+		B8DC058120AB1F4100A42CCA /* OfflineService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineService.swift; sourceTree = "<group>"; };
+		B8DC058320AB1F6700A42CCA /* OfflineServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineServiceImpl.swift; sourceTree = "<group>"; };
+		B8DC058A20AD6D1500A42CCA /* UpdateTaskTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateTaskTableViewController.swift; sourceTree = "<group>"; };
+		B8DC058B20AD6D1500A42CCA /* UpdateTaskTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpdateTaskTableViewController.xib; sourceTree = "<group>"; };
+		B8FA02AB20DCCB9E0075A3F8 /* DateTimeConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTimeConverter.swift; sourceTree = "<group>"; };
+		CB909D801E38CA8800218154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F7D0D392004E6245994AC0CE /* APIMANAGEWORKFORCETIMESHEETEntitiesStaticResolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIMANAGEWORKFORCETIMESHEETEntitiesStaticResolver.swift; path = "Proxy Classes/com.sap.bp.timesheet/internal/APIMANAGEWORKFORCETIMESHEETEntitiesStaticResolver.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A1315B21D4B982000A5DA56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7569DA531E5C717C00C5D751 /* SAPFoundation.framework in Frameworks */,
+				12E84FE31F4ECC4A0061C99E /* SAPFioriFlows.framework in Frameworks */,
+				756192211DBE1A99007F562C /* SAPOData.framework in Frameworks */,
+				755533981F25FD330017A1BC /* SAPOfflineOData.framework in Frameworks */,
+				128604DA1E55B41600C698B5 /* SAPCommon.framework in Frameworks */,
+				759BA2701E6821A7001C32BA /* SAPFiori.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8D94CCA20C7BEE200871524 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8D94CE920C7C44000871524 /* SAPCommon.framework in Frameworks */,
+				B8D94CEA20C7C44000871524 /* SAPFiori.framework in Frameworks */,
+				B8D94CEB20C7C44000871524 /* SAPFioriFlows.framework in Frameworks */,
+				B8D94CEC20C7C44000871524 /* SAPOData.framework in Frameworks */,
+				B8D94CED20C7C44000871524 /* SAPOfflineOData.framework in Frameworks */,
+				B8D94CEE20C7C44000871524 /* SAPFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12D066CB1F4DDAE40075EBA4 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				12D066CE1F4DDB0A0075EBA4 /* ConfigurationProvider.plist */,
+				12E84FDE1F4EBD460061C99E /* OnboardingManager.swift */,
+			);
+			name = Onboarding;
+			sourceTree = "<group>";
+		};
+		52C59CEDC48BC82835DCB406 /* public */ = {
+			isa = PBXGroup;
+			children = (
+				86E7DE0C178BD2E02BDBAFC4 /* APIMANAGEWORKFORCETIMESHEETEntities.swift */,
+				9217E1CBA02BB54EC434AD42 /* TimeSheetDataFields.swift */,
+				90E7F7AF2B0397B0891D0C6E /* APIMANAGEWORKFORCETIMESHEETEntitiesMetadata.swift */,
+				80437AD6D3D6B44459BB0D11 /* TimeSheetEntry.swift */,
+			);
+			name = public;
+			sourceTree = "<group>";
+		};
+		7532C1BB1D5B6917004B03AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B149F70520A040FF00C21395 /* Entity */,
+				B149F70720A0412E00C21395 /* Data Layer */,
+				B149F70820A0413800C21395 /* Service Layer */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		755C10B41D5C63B000ECF6A2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B8FA02AB20DCCB9E0075A3F8 /* DateTimeConverter.swift */,
+				B858A9CA20A313FF00820ED4 /* SAPFioriProgressIndicator.swift */,
+				B18AC44320A3179100AEB3C9 /* ServiceConfiguration.swift */,
+				B83E053F20A971D3009F7FCB /* ErrorAlertHelper.swift */,
+				B83E054120A972FF009F7FCB /* SimpleAlertBuilder.swift */,
+				B101262520C7D33900625B15 /* BarBannerNotification.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		75AC42C81DAF80C000B445FF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B858A9C320A30E5A00820ED4 /* Timesheet */,
+				B858A9D220A5AF0500820ED4 /* Task */,
+				B858A9D720A5BDB800820ED4 /* TaskType */,
+				B858A9C820A30F6400820ED4 /* ViewControllerFactory.swift */,
+				128B53051F8E667000E64DF6 /* SnapshotViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		75D373EF1DD1FB0800888D4C /* Proxy Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7B06012F155AEA41A6E274E3 /* internal */,
+				52C59CEDC48BC82835DCB406 /* public */,
+			);
+			name = "Proxy Classes";
+			sourceTree = "<group>";
+		};
+		7A1315AC1D4B982000A5DA56 = {
+			isa = PBXGroup;
+			children = (
+				7A16F06C1FD1B3C700D2FABD /* README.md */,
+				B1F128A520FE269300DD6148 /* Troubleshooting.md */,
+				7A1315B71D4B982000A5DA56 /* Timesheet */,
+				B8D94CCE20C7BEE200871524 /* TimesheetTests */,
+				7A1315B61D4B982000A5DA56 /* Products */,
+				7A1315CC1D4B990B00A5DA56 /* Frameworks */,
+				B191C27320FF3B3600634B65 /* TroubleshootingRessources */,
+			);
+			sourceTree = "<group>";
+		};
+		7A1315B61D4B982000A5DA56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A1315B51D4B982000A5DA56 /* Timesheet.app */,
+				B8D94CCD20C7BEE200871524 /* TimesheetTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A1315B71D4B982000A5DA56 /* Timesheet */ = {
+			isa = PBXGroup;
+			children = (
+				12D066CB1F4DDAE40075EBA4 /* Onboarding */,
+				7532C1BB1D5B6917004B03AF /* Model */,
+				75AC42C81DAF80C000B445FF /* ViewControllers */,
+				755C10B41D5C63B000ECF6A2 /* Utils */,
+				7A1315B81D4B982000A5DA56 /* AppDelegate.swift */,
+				CBCA7A9B1E3778A9001AF49E /* Main.storyboard */,
+				7A1315C11D4B982000A5DA56 /* Assets.xcassets */,
+				7A1315C31D4B982000A5DA56 /* LaunchScreen.storyboard */,
+				1277F7601F8E66AC0060AF58 /* SAPLogo@2x.png */,
+				7A1315C61D4B982000A5DA56 /* Info.plist */,
+			);
+			path = Timesheet;
+			sourceTree = "<group>";
+		};
+		7A1315CC1D4B990B00A5DA56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12E84FE21F4ECC3E0061C99E /* SAPFioriFlows.framework */,
+				755533971F25FD2A0017A1BC /* SAPOfflineOData.framework */,
+				759BA26F1E6821A7001C32BA /* SAPFiori.framework */,
+				7569DA511E5C716A00C5D751 /* SAPFoundation.framework */,
+				7561921A1DBE1A90007F562C /* SAPOData.framework */,
+				128604D91E55B41600C698B5 /* SAPCommon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B06012F155AEA41A6E274E3 /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				8B3DF71B6473AB255700F223 /* APIMANAGEWORKFORCETIMESHEETEntitiesFactory.swift */,
+				948DDDB966BA8162736F04C5 /* APIMANAGEWORKFORCETIMESHEETEntitiesMetadataText.swift */,
+				1BC83B845CFA748BE1CA42E4 /* APIMANAGEWORKFORCETIMESHEETEntitiesMetadataChanges.swift */,
+				F7D0D392004E6245994AC0CE /* APIMANAGEWORKFORCETIMESHEETEntitiesStaticResolver.swift */,
+				5A909A4D95E1A9A6345C998A /* APIMANAGEWORKFORCETIMESHEETEntitiesMetadataParser.swift */,
+			);
+			name = internal;
+			sourceTree = "<group>";
+		};
+		B149F70520A040FF00C21395 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				75D373EF1DD1FB0800888D4C /* Proxy Classes */,
+				B858A9DC20A5BEC600820ED4 /* TaskType.swift */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		B149F70720A0412E00C21395 /* Data Layer */ = {
+			isa = PBXGroup;
+			children = (
+				B804325820B57D3900018857 /* User */,
+				B8DC058520AC502F00A42CCA /* OfflineRepository */,
+				B149F71520A0919B00C21395 /* TimeSheetEntry */,
+				B149F71C20A0950A00C21395 /* DataLayerFactory.swift */,
+				B149F71E20A0956D00C21395 /* DataLayerFactoryProvider.swift */,
+				B149F72220A0975200C21395 /* DataLayerBackendFactory.swift */,
+			);
+			name = "Data Layer";
+			sourceTree = "<group>";
+		};
+		B149F70820A0413800C21395 /* Service Layer */ = {
+			isa = PBXGroup;
+			children = (
+				B8DC058020AB1F2B00A42CCA /* Offline */,
+				B149F70D20A08D1500C21395 /* TimeSheetEntry */,
+				B149F71320A0914A00C21395 /* ServiceFactory.swift */,
+				B1A7A7FE20A5C34F00AC1A1C /* TimeSheetAppServiceAPI.swift */,
+				B1A7A80020A5C46B00AC1A1C /* TimeSheetAppServiceImpl.swift */,
+				B1A7A7FC20A5BDD600AC1A1C /* TimeSheetAppServiceFactory.swift */,
+			);
+			name = "Service Layer";
+			sourceTree = "<group>";
+		};
+		B149F70D20A08D1500C21395 /* TimeSheetEntry */ = {
+			isa = PBXGroup;
+			children = (
+				B149F70F20A08DCA00C21395 /* TimeSheetEntryService.swift */,
+				B149F71120A08FE400C21395 /* TimeSheetEntryServiceImpl.swift */,
+			);
+			name = TimeSheetEntry;
+			sourceTree = "<group>";
+		};
+		B149F71520A0919B00C21395 /* TimeSheetEntry */ = {
+			isa = PBXGroup;
+			children = (
+				B149F71620A091DD00C21395 /* TimeSheetEntryRepository.swift */,
+				B149F71820A0921100C21395 /* TimeSheetEntryRepositoryImpl.swift */,
+			);
+			name = TimeSheetEntry;
+			sourceTree = "<group>";
+		};
+		B191C27320FF3B3600634B65 /* TroubleshootingRessources */ = {
+			isa = PBXGroup;
+			children = (
+				B191C27420FF3B3600634B65 /* Dev&Ops_Error2.png */,
+				B191C27520FF3B3600634B65 /* Dev&Ops_Error1.png */,
+			);
+			path = TroubleshootingRessources;
+			sourceTree = "<group>";
+		};
+		B804325820B57D3900018857 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				B804325920B57D5800018857 /* UserRepository.swift */,
+				B804325B20B57D6300018857 /* UserRepositoryImpl.swift */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		B858A9C320A30E5A00820ED4 /* Timesheet */ = {
+			isa = PBXGroup;
+			children = (
+				B858A9CC20A319AC00820ED4 /* TimesheetTableViewController.swift */,
+				B858A9CD20A319AC00820ED4 /* TimesheetTableViewController.xib */,
+			);
+			name = Timesheet;
+			sourceTree = "<group>";
+		};
+		B858A9D220A5AF0500820ED4 /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				B858A9D320A5AF3B00820ED4 /* TaskTableViewController.swift */,
+				B858A9D420A5AF3B00820ED4 /* TaskTableViewController.xib */,
+				B8DC058A20AD6D1500A42CCA /* UpdateTaskTableViewController.swift */,
+				B8DC058B20AD6D1500A42CCA /* UpdateTaskTableViewController.xib */,
+			);
+			name = Task;
+			sourceTree = "<group>";
+		};
+		B858A9D720A5BDB800820ED4 /* TaskType */ = {
+			isa = PBXGroup;
+			children = (
+				B858A9D820A5BE7A00820ED4 /* TaskTypeTableViewController.swift */,
+				B858A9D920A5BE7A00820ED4 /* TaskTypeTableViewController.xib */,
+			);
+			name = TaskType;
+			sourceTree = "<group>";
+		};
+		B8620DB720C96EDF000E07C9 /* TimeSheetEntry */ = {
+			isa = PBXGroup;
+			children = (
+				B8620DB820C96EFB000E07C9 /* TimeSheetEntryRepositoryImplTest.swift */,
+			);
+			name = TimeSheetEntry;
+			sourceTree = "<group>";
+		};
+		B8620DC520CA7442000E07C9 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				B8620DC620CA7450000E07C9 /* TaskTypeTest.swift */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		B8D94CCE20C7BEE200871524 /* TimesheetTests */ = {
+			isa = PBXGroup;
+			children = (
+				B8D94CDC20C7BF7200871524 /* Model */,
+				B8D94CD120C7BEE200871524 /* Info.plist */,
+			);
+			path = TimesheetTests;
+			sourceTree = "<group>";
+		};
+		B8D94CDC20C7BF7200871524 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B8620DC520CA7442000E07C9 /* Entity */,
+				B8D94CE120C7C01F00871524 /* Data Layer */,
+				B8D94CDD20C7BF7B00871524 /* Service Layer */,
+				B8D94CE720C7C2CB00871524 /* TestDataGenerator.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B8D94CDD20C7BF7B00871524 /* Service Layer */ = {
+			isa = PBXGroup;
+			children = (
+				B8D94CDE20C7BF8400871524 /* TimesheetEntry */,
+			);
+			name = "Service Layer";
+			sourceTree = "<group>";
+		};
+		B8D94CDE20C7BF8400871524 /* TimesheetEntry */ = {
+			isa = PBXGroup;
+			children = (
+				B8D94CDF20C7BF9300871524 /* TimeSheetEntryServiceImplTest.swift */,
+			);
+			name = TimesheetEntry;
+			sourceTree = "<group>";
+		};
+		B8D94CE120C7C01F00871524 /* Data Layer */ = {
+			isa = PBXGroup;
+			children = (
+				B8620DB720C96EDF000E07C9 /* TimeSheetEntry */,
+				B8D94CE220C7C02700871524 /* Mock */,
+			);
+			name = "Data Layer";
+			sourceTree = "<group>";
+		};
+		B8D94CE220C7C02700871524 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				B8D94CE320C7C03D00871524 /* TimeSheetEntryRepositoryMock.swift */,
+				B8D94CE520C7C19600871524 /* UserRepositoryMock.swift */,
+				B8620DBA20C96F3B000E07C9 /* TimeSheetODataServiceOnlineMock.swift */,
+				B8620DBE20C971A7000E07C9 /* TimeSheetODataServiceOfflineMock.swift */,
+			);
+			name = Mock;
+			sourceTree = "<group>";
+		};
+		B8DC058020AB1F2B00A42CCA /* Offline */ = {
+			isa = PBXGroup;
+			children = (
+				B8DC058120AB1F4100A42CCA /* OfflineService.swift */,
+				B8DC058320AB1F6700A42CCA /* OfflineServiceImpl.swift */,
+			);
+			name = Offline;
+			sourceTree = "<group>";
+		};
+		B8DC058520AC502F00A42CCA /* OfflineRepository */ = {
+			isa = PBXGroup;
+			children = (
+				B804325020AEF36E00018857 /* OfflineODataDelegateImpl.swift */,
+			);
+			name = OfflineRepository;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A1315B41D4B982000A5DA56 /* Timesheet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A1315C91D4B982000A5DA56 /* Build configuration list for PBXNativeTarget "Timesheet" */;
+			buildPhases = (
+				7A1315B11D4B982000A5DA56 /* Sources */,
+				7A1315B21D4B982000A5DA56 /* Frameworks */,
+				7A1315B31D4B982000A5DA56 /* Resources */,
+				758AC1C31D5A265200311F39 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Timesheet;
+			productName = Timesheet;
+			productReference = 7A1315B51D4B982000A5DA56 /* Timesheet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B8D94CCC20C7BEE200871524 /* TimesheetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8D94CD620C7BEE200871524 /* Build configuration list for PBXNativeTarget "TimesheetTests" */;
+			buildPhases = (
+				B8D94CC920C7BEE200871524 /* Sources */,
+				B8D94CCA20C7BEE200871524 /* Frameworks */,
+				B8D94CCB20C7BEE200871524 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8D94CD320C7BEE200871524 /* PBXTargetDependency */,
+			);
+			name = TimesheetTests;
+			productName = TimesheetTests;
+			productReference = B8D94CCD20C7BEE200871524 /* TimesheetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A1315AD1D4B982000A5DA56 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = SAP;
+				TargetAttributes = {
+					7A1315B41D4B982000A5DA56 = {
+						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+					B8D94CCC20C7BEE200871524 = {
+						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7A1315B41D4B982000A5DA56;
+					};
+				};
+			};
+			buildConfigurationList = 7A1315B01D4B982000A5DA56 /* Build configuration list for PBXProject "Timesheet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7A1315AC1D4B982000A5DA56;
+			productRefGroup = 7A1315B61D4B982000A5DA56 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A1315B41D4B982000A5DA56 /* Timesheet */,
+				B8D94CCC20C7BEE200871524 /* TimesheetTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A1315B31D4B982000A5DA56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B858A9DB20A5BE7A00820ED4 /* TaskTypeTableViewController.xib in Resources */,
+				B858A9CF20A319AC00820ED4 /* TimesheetTableViewController.xib in Resources */,
+				7A16F06D1FD1B3C700D2FABD /* README.md in Resources */,
+				7A1315C51D4B982000A5DA56 /* LaunchScreen.storyboard in Resources */,
+				B8DC058D20AD6D1500A42CCA /* UpdateTaskTableViewController.xib in Resources */,
+				B1F128A620FE269300DD6148 /* Troubleshooting.md in Resources */,
+				12D066CF1F4DDB0E0075EBA4 /* ConfigurationProvider.plist in Resources */,
+				7A1315C21D4B982000A5DA56 /* Assets.xcassets in Resources */,
+				CBCA7A991E3778A9001AF49E /* Main.storyboard in Resources */,
+				B191C27720FF3B3600634B65 /* Dev&Ops_Error1.png in Resources */,
+				B858A9D620A5AF3B00820ED4 /* TaskTableViewController.xib in Resources */,
+				1277F7611F8E66AF0060AF58 /* SAPLogo@2x.png in Resources */,
+				B191C27620FF3B3600634B65 /* Dev&Ops_Error2.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8D94CCB20C7BEE200871524 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A1315B11D4B982000A5DA56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				128B53061F8E667000E64DF6 /* SnapshotViewController.swift in Sources */,
+				B858A9C920A30F6400820ED4 /* ViewControllerFactory.swift in Sources */,
+				12E84FE51F4ECF220061C99E /* OnboardingManager.swift in Sources */,
+				B149F71920A0921100C21395 /* TimeSheetEntryRepositoryImpl.swift in Sources */,
+				B1A7A7FD20A5BDD600AC1A1C /* TimeSheetAppServiceFactory.swift in Sources */,
+				B149F71020A08DCA00C21395 /* TimeSheetEntryService.swift in Sources */,
+				B8DC058420AB1F6700A42CCA /* OfflineServiceImpl.swift in Sources */,
+				B858A9DA20A5BE7A00820ED4 /* TaskTypeTableViewController.swift in Sources */,
+				B18AC44420A3179100AEB3C9 /* ServiceConfiguration.swift in Sources */,
+				B858A9DD20A5BEC600820ED4 /* TaskType.swift in Sources */,
+				7A1315B91D4B982000A5DA56 /* AppDelegate.swift in Sources */,
+				874254E09C75E44F4DAA628F /* APIMANAGEWORKFORCETIMESHEETEntitiesFactory.swift in Sources */,
+				2917B07092AB7BC8786B5211 /* APIMANAGEWORKFORCETIMESHEETEntitiesMetadataText.swift in Sources */,
+				169D9D47DAEC49C74EBD63C7 /* APIMANAGEWORKFORCETIMESHEETEntitiesMetadataChanges.swift in Sources */,
+				B149F71F20A0956D00C21395 /* DataLayerFactoryProvider.swift in Sources */,
+				B1A7A7FF20A5C34F00AC1A1C /* TimeSheetAppServiceAPI.swift in Sources */,
+				3EBD37D430258CB6F7604B1B /* APIMANAGEWORKFORCETIMESHEETEntitiesStaticResolver.swift in Sources */,
+				B804325A20B57D5800018857 /* UserRepository.swift in Sources */,
+				B858A9D520A5AF3B00820ED4 /* TaskTableViewController.swift in Sources */,
+				B83E054020A971D3009F7FCB /* ErrorAlertHelper.swift in Sources */,
+				B149F71220A08FE400C21395 /* TimeSheetEntryServiceImpl.swift in Sources */,
+				B1A7A80120A5C46B00AC1A1C /* TimeSheetAppServiceImpl.swift in Sources */,
+				B149F72320A0975200C21395 /* DataLayerBackendFactory.swift in Sources */,
+				BAA2660D2F708BF11F3CEBF7 /* APIMANAGEWORKFORCETIMESHEETEntitiesMetadataParser.swift in Sources */,
+				B149F71420A0914A00C21395 /* ServiceFactory.swift in Sources */,
+				B8FA02AC20DCCB9E0075A3F8 /* DateTimeConverter.swift in Sources */,
+				B8DC058C20AD6D1500A42CCA /* UpdateTaskTableViewController.swift in Sources */,
+				B101262620C7D33900625B15 /* BarBannerNotification.swift in Sources */,
+				F2D851C7800058F19162541D /* APIMANAGEWORKFORCETIMESHEETEntities.swift in Sources */,
+				B83E054220A972FF009F7FCB /* SimpleAlertBuilder.swift in Sources */,
+				B149F71720A091DD00C21395 /* TimeSheetEntryRepository.swift in Sources */,
+				B8DC058220AB1F4100A42CCA /* OfflineService.swift in Sources */,
+				B804325120AEF36E00018857 /* OfflineODataDelegateImpl.swift in Sources */,
+				B804325C20B57D6300018857 /* UserRepositoryImpl.swift in Sources */,
+				B858A9CE20A319AC00820ED4 /* TimesheetTableViewController.swift in Sources */,
+				B858A9CB20A313FF00820ED4 /* SAPFioriProgressIndicator.swift in Sources */,
+				B149F71D20A0950A00C21395 /* DataLayerFactory.swift in Sources */,
+				C362125F70B197C5E214FA7A /* TimeSheetDataFields.swift in Sources */,
+				9423A88C48338E9425635401 /* APIMANAGEWORKFORCETIMESHEETEntitiesMetadata.swift in Sources */,
+				DD8F97EC2319B707B50440F0 /* TimeSheetEntry.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8D94CC920C7BEE200871524 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8620DC720CA7451000E07C9 /* TaskTypeTest.swift in Sources */,
+				B8620DBF20C971A7000E07C9 /* TimeSheetODataServiceOfflineMock.swift in Sources */,
+				B8D94CE620C7C19600871524 /* UserRepositoryMock.swift in Sources */,
+				B8D94CE420C7C03D00871524 /* TimeSheetEntryRepositoryMock.swift in Sources */,
+				B8620DB920C96EFB000E07C9 /* TimeSheetEntryRepositoryImplTest.swift in Sources */,
+				B8620DBB20C96F3B000E07C9 /* TimeSheetODataServiceOnlineMock.swift in Sources */,
+				B8D94CE020C7BF9300871524 /* TimeSheetEntryServiceImplTest.swift in Sources */,
+				B8D94CE820C7C2CB00871524 /* TestDataGenerator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B8D94CD320C7BEE200871524 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A1315B41D4B982000A5DA56 /* Timesheet */;
+			targetProxy = B8D94CD220C7BEE200871524 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7A1315C31D4B982000A5DA56 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A1315C41D4B982000A5DA56 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CBCA7A9B1E3778A9001AF49E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB909D801E38CA8800218154 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7A1315C71D4B982000A5DA56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7A1315C81D4B982000A5DA56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7A1315CA1D4B982000A5DA56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Timesheet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sap.bp.offline.Timesheet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		7A1315CB1D4B982000A5DA56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Timesheet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sap.bp.offline.Timesheet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		B8D94CD420C7BEE200871524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = TimesheetTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sap.bp.TimesheetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Timesheet.app/Timesheet";
+			};
+			name = Debug;
+		};
+		B8D94CD520C7BEE200871524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = TimesheetTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sap.bp.TimesheetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Timesheet.app/Timesheet";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A1315B01D4B982000A5DA56 /* Build configuration list for PBXProject "Timesheet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A1315C71D4B982000A5DA56 /* Debug */,
+				7A1315C81D4B982000A5DA56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A1315C91D4B982000A5DA56 /* Build configuration list for PBXNativeTarget "Timesheet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A1315CA1D4B982000A5DA56 /* Debug */,
+				7A1315CB1D4B982000A5DA56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8D94CD620C7BEE200871524 /* Build configuration list for PBXNativeTarget "TimesheetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8D94CD420C7BEE200871524 /* Debug */,
+				B8D94CD520C7BEE200871524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7A1315AD1D4B982000A5DA56 /* Project object */;
+}
