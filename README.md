@@ -20,6 +20,7 @@ Requirements
 -------------
 - An account in SAP Cloud Platform with a subaccount in the Neo environment and Mobile Services enabled.
 - An SAP S/4HANA Cloud tenant. **This is a commercial paid product.**
+- A SAML 2.0 Identity Provider. We recommend to use SAP Cloud Platform Identity Authentication.
 - A Mac Device with Xcode 9.3 and SAP iOS SDK.
 
 
