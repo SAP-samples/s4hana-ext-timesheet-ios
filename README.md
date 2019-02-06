@@ -26,9 +26,9 @@ Requirements
 
 Download and Installation
 -------------
-This repository is a part of the [Download and Configure the Sample App](https://help.sap.com/viewer/80ceaf9e74574004873d675445e0ec84/SHIP/en-US/53299941e6c04e46b595d368bfc7fad3.html) step in the tutorial. Instruction for use are in that step.
+This repository is a part of the [Download and Configure the Sample App](https://help.sap.com/viewer/80ceaf9e74574004873d675445e0ec84/SHIP/en-US/53299941e6c04e46b595d368bfc7fad3.html) step in the tutorial. Instructions for use can be found in that step.
 
-To download this sample code, so that it can be used in the tutorial, [please download the zip file by clicking here](https://github.com/SAP/s4hana-ext-timesheet-ios/archive/master.zip).  
+[Please download the zip file by clicking here](https://github.com/SAP/s4hana-ext-timesheet-ios/archive/master.zip) so that the code can be used in the tutorial.  
 
 
 Known issues
