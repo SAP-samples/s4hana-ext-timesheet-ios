@@ -15,7 +15,7 @@ class DataLayerBackendFactory: DataLayerFactory {
     
     private var timeSheetEntryRepository: TimeSheetEntryRepository!
     
-    private var offlineDelegate: OfflineODataDelegate!
+    private var offlineDelegate: OfflineODataProviderDelegate!
     
     private var userRepository: UserRepository!
     
@@ -29,11 +29,11 @@ class DataLayerBackendFactory: DataLayerFactory {
         self.apimanageworkforcetimesheetEntitiesOnline = DataLayerBackendFactory.createTimesheetOnlineService(sapUrlSession: sapUrlSession)
     }
     
-    private static func createTimesheetOfflineService(sapUrlSession: SAPURLSession, offlineDelegate: OfflineODataDelegate) ->  APIMANAGEWORKFORCETIMESHEETEntities<OfflineODataProvider>! {
+    private static func createTimesheetOfflineService(sapUrlSession: SAPURLSession, offlineDelegate: OfflineODataProviderDelegate) ->  APIMANAGEWORKFORCETIMESHEETEntities<OfflineODataProvider>! {
         let timesheetConnectionId = ServiceConfiguration.getTimesheetServiceConnectionId()
         let serviceDataUrl = ServiceConfiguration.getHostUrl().appendingPathComponent(timesheetConnectionId)
         
-        var parameters = OfflineODataParameters.init()
+        let parameters = OfflineODataParameters.init()
         parameters.storeName = "TimesheetStore"
         parameters.enableRepeatableRequests = false
         

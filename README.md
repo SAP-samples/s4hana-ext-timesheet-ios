@@ -21,7 +21,8 @@ Requirements
 - An account in SAP Cloud Platform with a subaccount in the Neo environment and Mobile Services enabled.
 - An SAP S/4HANA Cloud tenant. **This is a commercial paid product.**
 - A SAML 2.0 Identity Provider. We recommend to use SAP Cloud Platform Identity Authentication.
-- A Mac Device with Xcode 9.3 and SAP iOS SDK.
+- A Mac Device with **Xcode 11.6 (11E708)** and **SAP Cloud Platform SDK for iOS (XCode 11.5) 5.1.0**.
+- Tested and runned with **iOS 13.6**
 
 
 Download and Installation
@@ -41,5 +42,5 @@ If you have issues with this sample, please open a report using [GitHub issues](
 
 License
 -------
-Copyright © 2019 SAP SE or an SAP affiliate company. All rights reserved.
-This file is licensed under the SAP Sample Code License except as noted otherwise in the [LICENSE file](LICENSE).
+Copyright © 2020 SAP SE or an SAP affiliate company. All rights reserved.
+This file is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](LICENSE) file.

@@ -52,8 +52,8 @@ class UpdateTaskTableViewController: FUIFormTableViewController, SAPFioriProgres
         self.tableView.register(FUIDatePickerFormCell.self, forCellReuseIdentifier: FUIDatePickerFormCell.reuseIdentifier)
         self.tableView.register(FUITableViewHeaderFooterView.self, forHeaderFooterViewReuseIdentifier: FUITableViewHeaderFooterView.reuseIdentifier)
         self.tableView.estimatedRowHeight = 120
-        self.tableView.rowHeight = UITableViewAutomaticDimension
-        self.tableView.sectionHeaderHeight = UITableViewAutomaticDimension
+        self.tableView.rowHeight = UITableView.automaticDimension
+        self.tableView.sectionHeaderHeight = UITableView.automaticDimension
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -197,11 +197,7 @@ class UpdateTaskTableViewController: FUIFormTableViewController, SAPFioriProgres
     private func createDateSelectionCell(indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: FUIDatePickerFormCell.reuseIdentifier, for: indexPath) as! FUIDatePickerFormCell
         cell.keyName = "Date"
-        
-        cell.setTintColor(self.view.tintColor, for: .normal)
-        cell.setTintColor(self.view.tintColor, for: .selected)
-        cell.valueTextField.textColor = self.view.tintColor
-        
+            
         cell.dateFormatter = dateFormatter
         cell.datePickerMode = .date
         cell.value = selectedDate
@@ -218,10 +214,6 @@ class UpdateTaskTableViewController: FUIFormTableViewController, SAPFioriProgres
     
     private func createTimeSelectionCell(indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: FUIDatePickerFormCell.reuseIdentifier, for: indexPath) as! FUIDatePickerFormCell
-        
-        cell.setTintColor(self.view.tintColor, for: .normal)
-        cell.setTintColor(self.view.tintColor, for: .selected)
-        cell.valueTextField.textColor = self.view.tintColor
         
         cell.dateFormatter = timeFormatter
         cell.datePickerMode = .time

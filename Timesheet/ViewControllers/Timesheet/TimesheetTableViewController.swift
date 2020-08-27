@@ -22,6 +22,8 @@ class TimesheetTableViewController: FUIFormTableViewController, SAPFioriProgress
     
     public var offlineService: OfflineService!
     
+    public let defaultNodeColor: UIColor = UIColor.preferredFioriColor(forStyle: FUIColorStyle.tintColorTapState)
+    
     // We assume the working week is 8 hours long
     public var dailyWorkHours: Double = 8.0
     
@@ -41,7 +43,7 @@ class TimesheetTableViewController: FUIFormTableViewController, SAPFioriProgress
         self.tableView.register(FUITimelineMarkerCell.self, forCellReuseIdentifier: FUITimelineMarkerCell.reuseIdentifier)
         
         self.tableView.estimatedRowHeight = 120
-        self.tableView.rowHeight = UITableViewAutomaticDimension
+        self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.backgroundColor = UIColor.preferredFioriColor(forStyle: .backgroundBase)
         self.tableView.separatorStyle = .none
         self.tableView.sectionHeaderHeight = 0
@@ -177,7 +179,7 @@ class TimesheetTableViewController: FUIFormTableViewController, SAPFioriProgress
         chart.captionLabelText = "Hours left to Maintain"
 
         chart.chartSize = FUIKPIProgressViewSize.large
-        chart.colorScheme = .darkBackground
+        
         setHoursLeftChartKPIValues(kpiView: chart)
 
         // KPI for the amount of tasks
@@ -239,7 +241,6 @@ class TimesheetTableViewController: FUIFormTableViewController, SAPFioriProgress
         kpiView.items = items
         kpiView.captionlabel.text = captionLabelText
         kpiView.captionlabel.numberOfLines = captionLabelLines
-        kpiView.tintColor = UIColor(hexString: "CAE4FB")
         kpiView.isEnabled = isEnabled
         
         return kpiView
@@ -398,8 +399,8 @@ class TimesheetTableViewController: FUIFormTableViewController, SAPFioriProgress
         return 0.0
     }
     
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == UITableViewCellEditingStyle.delete {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCell.EditingStyle.delete {
             deleteTimeSheetEntryCell(indexPath: indexPath)
         }
     }
@@ -428,11 +429,6 @@ class TimesheetTableViewController: FUIFormTableViewController, SAPFioriProgress
     private func createDatePickerCell(indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: FUIDatePickerFormCell.reuseIdentifier, for: indexPath) as! FUIDatePickerFormCell
         cell.keyName = "Date"
-        
-        cell.setTintColor(self.view.tintColor, for: .normal)
-        cell.setTintColor(self.view.tintColor, for: .selected)
-        cell.valueTextField.textColor = self.view.tintColor
-        
         cell.dateFormatter = dateFormatter
         cell.datePickerMode = .date
         cell.value = cell.dateFormatter!.date(from: dateFormatter.string(from: selectedDate))!
@@ -468,13 +464,13 @@ class TimesheetTableViewController: FUIFormTableViewController, SAPFioriProgress
                 // Define here the Timeline cell Icons for each task type
                 switch taskTypeAbbreviation {
                 case "ADMI":
-                    timelineCell.eventImage = FUIIconLibrary.map.marker.jobSmall
+                    timelineCell.secondaryTimestampImage = FUIIconLibrary.map.marker.job
                 case "TRAV":
-                    timelineCell.eventImage = FUIIconLibrary.map.marker.busSmall
+                    timelineCell.secondaryTimestampImage = FUIIconLibrary.map.marker.bus
                 case "MISC":
-                    timelineCell.eventImage = FUIIconLibrary.system.shuffle
+                    timelineCell.secondaryTimestampImage = FUIIconLibrary.system.shuffle
                 default:
-                    timelineCell.eventImage = FUIIconLibrary.system.flagOn
+                    timelineCell.secondaryTimestampImage = FUIIconLibrary.system.flagOn
                 }
                 
             } else {
@@ -486,8 +482,8 @@ class TimesheetTableViewController: FUIFormTableViewController, SAPFioriProgress
         
         timelineCell.attributeText = " "
         
-        timelineCell.nodeImage = FUITimelineNode.open
-        
+        timelineCell.nodeType = FUITimelineCell.NodeType.open
+
         if let startTime = entry.yy1StartTimeTIM, let endTime = entry.yy1EndTimeTIM {
             var calendar = Calendar.current
             calendar.timeZone = TimeZone(abbreviation: "UTC")!
@@ -498,7 +494,7 @@ class TimesheetTableViewController: FUIFormTableViewController, SAPFioriProgress
             let timeFormatter = DateFormatter()
             timeFormatter.timeStyle = .short
             
-            timelineCell.eventText =  timeFormatter.string(from: startDate!)
+            timelineCell.timestampText =  timeFormatter.string(from: startDate!)
             
             timelineCell.subheadlineText = "\(timeFormatter.string(from: startDate!)) - \(timeFormatter.string(from: endDate!))"
             
@@ -512,9 +508,12 @@ class TimesheetTableViewController: FUIFormTableViewController, SAPFioriProgress
         timelineMarkerCell.timelineWidth = CGFloat(95.0)
         timelineMarkerCell.titleText = "Recording Start"
         if let timeSheetDate = timeSheetEntries.first?.timeSheetDate?.utc() {
-            timelineMarkerCell.eventText = dateFormatter.string(from: timeSheetDate)
+            timelineMarkerCell.timestampText = dateFormatter.string(from: timeSheetDate)
         }
-        timelineMarkerCell.nodeImage = FUITimelineNode.start
+
+        timelineMarkerCell.nodeType = FUITimelineMarkerCell.NodeType.start
+        timelineMarkerCell.nodeColor = self.defaultNodeColor
+            
         timelineMarkerCell.showLeadingTimeline = false
         timelineMarkerCell.showTrailingTimeline = true
         
@@ -524,9 +523,12 @@ class TimesheetTableViewController: FUIFormTableViewController, SAPFioriProgress
     private func createEndTimelineNode(indexPath: IndexPath) -> UITableViewCell {
         let timelineMarkerCell = tableView.dequeueReusableCell(withIdentifier: FUITimelineMarkerCell.reuseIdentifier, for: indexPath) as! FUITimelineMarkerCell
         timelineMarkerCell.timelineWidth = CGFloat(95.0)
-        timelineMarkerCell.eventText = "End of Recording"
+        timelineMarkerCell.timestampText = "End of Recording"
         timelineMarkerCell.titleText = "Total time for today: \(converter.sumHoursForDay(entries: timeSheetEntries))"
-        timelineMarkerCell.nodeImage = FUITimelineNode.end
+                
+        timelineMarkerCell.nodeType = FUITimelineMarkerCell.NodeType.end
+        timelineMarkerCell.nodeColor = self.defaultNodeColor
+        
         timelineMarkerCell.showLeadingTimeline = true
         timelineMarkerCell.showTrailingTimeline = false
         return timelineMarkerCell
@@ -536,7 +538,10 @@ class TimesheetTableViewController: FUIFormTableViewController, SAPFioriProgress
         let timelineMarkerCell = tableView.dequeueReusableCell(withIdentifier: FUITimelineMarkerCell.reuseIdentifier, for: indexPath) as! FUITimelineMarkerCell
         timelineMarkerCell.timelineWidth = CGFloat(95.0)
         timelineMarkerCell.titleText = "No entries for today"
-        timelineMarkerCell.nodeImage = FUITimelineNode.inactive
+        
+        timelineMarkerCell.nodeType = FUITimelineMarkerCell.NodeType.default
+        timelineMarkerCell.nodeColor = self.defaultNodeColor
+        
         timelineMarkerCell.showLeadingTimeline = true
         timelineMarkerCell.showTrailingTimeline = true
         return timelineMarkerCell

@@ -45,7 +45,7 @@ class TaskTableViewController: FUIFormTableViewController, SAPFioriProgressIndic
         self.tableView.register(FUIObjectTableViewCell.self, forCellReuseIdentifier: FUIObjectTableViewCell.reuseIdentifier)
         self.tableView.register(FUIDatePickerFormCell.self, forCellReuseIdentifier: FUIDatePickerFormCell.reuseIdentifier)
         self.tableView.estimatedRowHeight = 120
-        self.tableView.rowHeight = UITableViewAutomaticDimension
+        self.tableView.rowHeight = UITableView.automaticDimension
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -202,11 +202,7 @@ class TaskTableViewController: FUIFormTableViewController, SAPFioriProgressIndic
     private func createDateSelectionCell(indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: FUIDatePickerFormCell.reuseIdentifier, for: indexPath) as! FUIDatePickerFormCell
         cell.keyName = "Date"
-        
-        cell.setTintColor(self.view.tintColor, for: .normal)
-        cell.setTintColor(self.view.tintColor, for: .selected)
-        cell.valueTextField.textColor = self.view.tintColor
-        
+                        
         cell.dateFormatter = dateFormatter
         cell.datePickerMode = .date
         cell.value = selectedDate
@@ -223,11 +219,7 @@ class TaskTableViewController: FUIFormTableViewController, SAPFioriProgressIndic
     
     private func createTimeSelectionCell(indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: FUIDatePickerFormCell.reuseIdentifier, for: indexPath) as! FUIDatePickerFormCell
-        
-        cell.setTintColor(self.view.tintColor, for: .normal)
-        cell.setTintColor(self.view.tintColor, for: .selected)
-        cell.valueTextField.textColor = self.view.tintColor
-        
+                
         cell.dateFormatter = timeFormatter
         cell.datePickerMode = .time
         cell.isEnabled = true

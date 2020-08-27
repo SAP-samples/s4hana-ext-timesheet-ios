@@ -32,7 +32,7 @@ class SimpleAlertBuilder {
     
     public func build() -> UIAlertController {
         var okAction: UIAlertAction?
-        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
         
         if actionText != nil {
             okAction = UIAlertAction(title: actionText, style: .default, handler: self.okAction)

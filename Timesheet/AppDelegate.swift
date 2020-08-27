@@ -15,12 +15,13 @@ import SAPCommon
 class AppDelegate: UIResponder, UIApplicationDelegate, OnboardingManagerDelegate {
         var window: UIWindow?
 
-    func application(_: UIApplication, didFinishLaunchingWithOptions _: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_: UIApplication, didFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Set a FUIInfoViewController as the rootViewController, since there it is none set in the Main.storyboard
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window!.rootViewController = FUIInfoViewController.createSplashScreenInstanceFromStoryboard()
 
-        UINavigationBar.applyFioriStyle()
+        UINavigationBar().applyFioriStyle()
+
         UINavigationBar.appearance().shadowImage = UIImage()
         
         Logger.root.add(handler: ConsoleLogHandler())

@@ -45,7 +45,7 @@ class TaskTypeTableViewController: UITableViewController {
         var cell = tableView.dequeueReusableCell(withIdentifier: "taskTypeCell")
         
         if cell == nil {
-            cell = UITableViewCell(style: UITableViewCellStyle.value1, reuseIdentifier: "taskTypeCell")
+            cell = UITableViewCell(style: UITableViewCell.CellStyle.value1, reuseIdentifier: "taskTypeCell")
         }
         
         cell?.textLabel?.text = task.timeSheetTaskDescription

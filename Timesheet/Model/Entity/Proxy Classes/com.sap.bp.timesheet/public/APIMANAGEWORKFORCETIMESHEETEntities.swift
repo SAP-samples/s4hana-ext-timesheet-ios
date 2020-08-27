@@ -14,18 +14,18 @@ open class APIMANAGEWORKFORCETIMESHEETEntities<Provider: DataServiceProvider>: D
     }
 
     open func fetchTimeSheetEntry(matching query: DataQuery, completionHandler: @escaping (TimeSheetEntry?, Error?) -> Void) -> Void {
-        self.addBackgroundOperation {
-        do {
-            let result: TimeSheetEntry = try self.fetchTimeSheetEntry(matching: query)
-            self.completionQueue.addOperation {
-                completionHandler(result, nil)
+        self.addBackgroundOperationForAction {
+            do {
+                let result: TimeSheetEntry = try self.fetchTimeSheetEntry(matching: query)
+                self.completionQueue.addOperation {
+                    completionHandler(result, nil)
+                }
             }
-        }
-        catch let error {
-            self.completionQueue.addOperation {
-                completionHandler(nil, error)
+            catch let error {
+                self.completionQueue.addOperation {
+                    completionHandler(nil, error)
+                }
             }
-        }
         }
     }
 
@@ -34,18 +34,18 @@ open class APIMANAGEWORKFORCETIMESHEETEntities<Provider: DataServiceProvider>: D
     }
 
     open func fetchTimeSheetEntryCollection(matching query: DataQuery = DataQuery(), completionHandler: @escaping (Array<TimeSheetEntry>?, Error?) -> Void) -> Void {
-        self.addBackgroundOperation {
-        do {
-            let result: Array<TimeSheetEntry> = try self.fetchTimeSheetEntryCollection(matching: query)
-            self.completionQueue.addOperation {
-                completionHandler(result, nil)
+        self.addBackgroundOperationForAction {
+            do {
+                let result: Array<TimeSheetEntry> = try self.fetchTimeSheetEntryCollection(matching: query)
+                self.completionQueue.addOperation {
+                    completionHandler(result, nil)
+                }
             }
-        }
-        catch let error {
-            self.completionQueue.addOperation {
-                completionHandler(nil, error)
+            catch let error {
+                self.completionQueue.addOperation {
+                    completionHandler(nil, error)
+                }
             }
-        }
         }
     }
 

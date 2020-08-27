@@ -129,9 +129,7 @@ class OnboardingManager {
     // OAuth2AuthenticationStep
     private func configuredOAuth2AuthenticationStep() -> OAuth2AuthenticationStep {
         let presenter = FioriWKWebViewPresenter(webViewDelegate: self)
-        let oAuth2AuthenticationStep = OAuth2AuthenticationStep(presenter: presenter)
-        oAuth2AuthenticationStep.sendsValidationRequest = ConnectivityUtils.isConnected()
-        
+        let oAuth2AuthenticationStep = OAuth2AuthenticationStep(presenter: presenter)        
         return oAuth2AuthenticationStep
     }
     
@@ -212,6 +210,7 @@ class OnboardingManager {
             self.logger.error("Onboarding failed!", error: error)
             self.clearUserData()
             self.onboardFailed(error)
+        @unknown default: FUIToastMessage.show(message: "Could not Onboard")
         }
     }
     
@@ -224,6 +223,7 @@ class OnboardingManager {
         case let .failed(error):
             self.logger.error("Restoring failed!", error: error)
             self.restoreFailed(error)
+        @unknown default: FUIToastMessage.show(message: "Could not Onboard")
         }
     }
     
@@ -455,6 +455,7 @@ extension OnboardingManager {
             
         case let .failed(error):
             self.unlockFailed(error)
+        @unknown default: FUIToastMessage.show(message: "Could not Onboard")
         }
     }
     
