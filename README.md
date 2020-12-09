@@ -1,3 +1,5 @@
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/s4hana-ext-timesheet-ios)](https://api.reuse.software/info/github.com/SAP-samples/s4hana-ext-timesheet-ios)
+
 # SAP S/4HANA Cloud Extensions – Native iOS Offline Timesheet App
 This repository contains the sample code for the [Native iOS Offline Timesheet App tutorial](https://tiny.cc/s4-timesheet-ios).  
 
