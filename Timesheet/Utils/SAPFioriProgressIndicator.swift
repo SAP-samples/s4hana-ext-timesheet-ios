@@ -2,7 +2,7 @@
 // SAPFioriLoadingIndicator.swift
 // Timesheet
 //
-// Created by SAP Cloud Platform SDK for iOS Assistant application on 27/04/18
+// Created by SAP Business Technology Platform (BTP) SDK for iOS Assistant application on 27/04/18
 //
 
 import Foundation
