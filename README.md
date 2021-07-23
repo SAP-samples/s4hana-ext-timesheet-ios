@@ -20,10 +20,10 @@ SAP Extensibility Explorer is a central place where anyone involved in the exten
 
 Requirements
 -------------
-- An account in SAP Cloud Platform with a subaccount in the Neo environment and Mobile Services enabled.
+- An account in SAP Business Technology Platform (BTP) with a subaccount in the Neo environment and Mobile Services enabled.
 - An SAP S/4HANA Cloud tenant. **This is a commercial paid product.**
-- A SAML 2.0 Identity Provider. We recommend to use SAP Cloud Platform Identity Authentication.
-- A Mac Device with **Xcode 11.6 (11E708)** and **SAP Cloud Platform SDK for iOS (XCode 11.5) 5.1.0**.
+- A SAML 2.0 Identity Provider. We recommend to use SAP Business Technology Platform (BTP) Identity Authentication.
+- A Mac Device with **Xcode 11.6 (11E708)** and **SAP Business Technology Platform (BTP) SDK for iOS (XCode 11.5) 5.1.0**.
 - Tested and runned with **iOS 13.6**
 
 

@@ -1,7 +1,7 @@
 //
 // OnboardingManager.swift
 //
-// Created by SAP Cloud Platform SDK for iOS Assistant application on 04/06/18
+// Created by SAP Business Technology Platform (BTP) SDK for iOS Assistant application on 04/06/18
 //
 
 import SAPCommon

@@ -40,7 +40,7 @@ playground.xcworkspace
 ## Swift Package Manager
 .build/
 
-## SAP Cloud Platform iOS SDK Frameworks
+## SAP Business Technology Platform (BTP) iOS SDK Frameworks
 SAPCommon.framework/
 SAPOData.framework/
 *.framework/
