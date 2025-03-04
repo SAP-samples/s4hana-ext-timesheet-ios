@@ -1,3 +1,10 @@
+## Deprecation Notice
+
+This public repository is read-only and no longer maintained.
+
+![](https://img.shields.io/badge/STATUS-NOT%20CURRENTLY%20MAINTAINED-red.svg?longCache=true&style=flat)
+
+---
 [![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/s4hana-ext-timesheet-ios)](https://api.reuse.software/info/github.com/SAP-samples/s4hana-ext-timesheet-ios)
 
 # SAP S/4HANA Cloud Extensions – Native iOS Offline Timesheet App
